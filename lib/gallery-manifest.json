@@ -1,0 +1,15 @@
+[
+  {
+    "id": "folder-example-puja-ceremony",
+    "title": "Example Puja Ceremony",
+    "tag": "Ceremonies",
+    "event_date": "2026-10-10",
+    "body": "This is a sample update that shows how the gallery works. Replace the photos and this text with your real puja ceremony details.\n\nWrite what happened here: the occasion, who attended, and anything visitors should know about the event.\n\nEvery new paragraph in this Word file shows up as a separate paragraph in the pop-up.",
+    "images": [
+      "/images/gallery/example%20puja%20ceremony/photo-1.jpg",
+      "/images/gallery/example%20puja%20ceremony/photo-2.jpg",
+      "/images/gallery/example%20puja%20ceremony/photo-3.jpg",
+      "/images/gallery/example%20puja%20ceremony/photo-4.jpg"
+    ]
+  }
+]
