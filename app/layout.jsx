@@ -1,3 +1,5 @@
+import '@fontsource-variable/cinzel/index.css';
+import '@fontsource-variable/mulish/index.css';
 import './globals.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://okaresorts.com';

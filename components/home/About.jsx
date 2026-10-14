@@ -6,7 +6,7 @@ export default function About() {
             <div className="about-grid">
               <div className="reveal">
                 <div className="eyebrow">An elite urban community</div>
-                <h2>222 plots, laid out across 32 acres of open, green land.</h2>
+                <h2>222 plots, laid out across 80 acres of open, green land.</h2>
               </div>
               <div className="about-copy reveal">
                 <p>Oka Resorts is a plotted residential development positioned on Survey Numbers 231–236 of Reddipalli village, Padmanabham Mandal, in the Visakhapatnam district — directly adjacent to the Padmanabham-to-Raghu Engineering College 100-feet road.</p>
@@ -14,7 +14,7 @@ export default function About() {
                 <div className="card-row">
                   <div className="cell"><b>231–236</b><span>Survey Numbers</span></div>
                   <div className="cell"><b>100 ft</b><span>Frontage Road</span></div>
-                  <div className="cell"><b>50' / 30'</b><span>Internal Roads</span></div>
+                  <div className="cell"><b>50&prime;&nbsp;/&nbsp;30&prime;</b><span>Internal Roads</span></div>
                   <div className="cell"><b>Ready</b><span>For Registration</span></div>
                 </div>
               </div>

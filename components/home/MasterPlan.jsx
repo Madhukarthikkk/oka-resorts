@@ -15,7 +15,7 @@ export default function MasterPlan() {
                 <ul className="plan-list">
                   <li>222 individually numbered plots</li>
                   <li>Entrance gate with avenue plantation</li>
-                  <li>50' and 30' wide internal roads</li>
+                  <li>50&prime; and 30&prime; wide internal roads</li>
                   <li>Central amenities &amp; clubhouse zone</li>
                   <li>Modern drainage across the layout</li>
                 </ul>

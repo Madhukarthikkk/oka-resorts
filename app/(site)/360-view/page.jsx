@@ -1,11 +1,10 @@
-
 import Link from 'next/link';
 import { toEmbedUrl } from '@/lib/embed';
 
 export const metadata = {
   title: '360° View — Oka Resorts, Reddipalli, Visakhapatnam',
   description:
-    'Take a 360° virtual tour of Oka Resorts, the 32-acre plotted farmhouse and resort community at Reddipalli, Padmanabham, Visakhapatnam.',
+    'Take a 360° virtual tour of Oka Resorts, the 80-acre plotted farmhouse and resort community at Reddipalli, Padmanabham, Visakhapatnam.',
 };
 
 // ➜ PASTE YOUR 360° VIDEO LINK BETWEEN THE QUOTES BELOW.

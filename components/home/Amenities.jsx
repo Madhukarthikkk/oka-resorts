@@ -40,7 +40,7 @@ export default function Amenities() {
             <div className="chip-list reveal">
               <span className="chip">222 Plots</span>
               <span className="chip">Entrance Gate</span>
-              <span className="chip">50' &amp; 30' Wide Roads</span>
+              <span className="chip">50&prime; &amp; 30&prime; Wide Roads</span>
               <span className="chip">Children's Play Area</span>
               <span className="chip">Walking / Jogging Tracks</span>
               <span className="chip">Guest House</span>
