@@ -1,15 +1,19 @@
 [
   {
-    "id": "folder-example-puja-ceremony",
-    "title": "Example Puja Ceremony",
-    "tag": "Ceremonies",
-    "event_date": "2026-10-10",
-    "body": "This is a sample update that shows how the gallery works. Replace the photos and this text with your real puja ceremony details.\n\nWrite what happened here: the occasion, who attended, and anything visitors should know about the event.\n\nEvery new paragraph in this Word file shows up as a separate paragraph in the pop-up.",
+    "id": "folder-2026-10-15-oka-resorts-posters",
+    "title": "Oka Resorts Posters",
+    "tag": "Posters",
+    "event_date": "2026-10-15",
+    "body": "Poster designs for Oka Resorts at Reddipalli, near Bhogapuram, Visakhapatnam.\n\nUse the arrows or the small pictures below the poster to view all eight.",
     "images": [
-      "/images/gallery/example%20puja%20ceremony/photo-1.jpg",
-      "/images/gallery/example%20puja%20ceremony/photo-2.jpg",
-      "/images/gallery/example%20puja%20ceremony/photo-3.jpg",
-      "/images/gallery/example%20puja%20ceremony/photo-4.jpg"
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/cover.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-1.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-2.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-3.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-4.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-5.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-6.jpg",
+      "/images/gallery/2026-10-15%20Oka%20Resorts%20Posters/photo-7.jpg"
     ]
   }
 ]

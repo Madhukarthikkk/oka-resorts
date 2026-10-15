@@ -10,7 +10,7 @@
 |---|---|
 | `/` | Home page (same design as before) |
 | `/gallery` | Gallery & Updates. One card per folder in `public/images/gallery`; click for all photos and text |
-| `/360-view` | 360° virtual tour page. Paste the video link into `VIDEO_URL` in `app/(site)/360-view/page.jsx` |
+| `/360-view` | 360° virtual tour page (Panoee tour, set in `components/PanoeeTour.jsx`) | Privacy & Cookies |
 | `/admin` | Host login. Add or delete gallery updates. Not shown in the menu or Google |
 
 ## Adding a gallery update (folders)
@@ -91,7 +91,7 @@ Open http://localhost:3000. The admin page is at http://localhost:3000/admin.
 1. Upload this project to a GitHub repository (the `.gitignore` already skips `node_modules` and `.env.local`).
 2. At vercel.com, choose **Add New → Project**, import the repository.
 3. Under **Environment Variables**, add the same three values as `.env.example`
-   (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL=https://okaresorts.com`), then deploy.
+   (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL=https://okaresorts.com`), then deploy. Optional: add `NEXT_PUBLIC_GA_ID` (your Google Analytics 4 ID, like `G-XXXXXXXXXX`) to count visits and calls, WhatsApp and brochure clicks. Leave it out and no tracking code is loaded.
 4. In the Vercel project: **Settings → Domains → Add** `okaresorts.com`. Vercel shows the DNS records to add; add them at the place where you bought the domain. HTTPS is set up automatically.
 
 ## How the host adds a gallery update

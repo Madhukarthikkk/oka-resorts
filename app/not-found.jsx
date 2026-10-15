@@ -28,6 +28,14 @@ export default function NotFound() {
                 <Link href="/gallery" className="btn">View gallery</Link>
                 <a href="/#contact" className="btn">Contact us</a>
               </div>
+              <nav className="nf-links" aria-label="Popular pages">
+                <b>Popular pages</b>
+                <a href="/#location">Location</a>
+                <a href="/#masterplan">Master plan</a>
+                <a href="/#amenities">Amenities</a>
+                <Link href="/360-view">360&deg; view</Link>
+                <a href="/#faq">FAQ</a>
+              </nav>
             </div>
           </div>
         </section>
