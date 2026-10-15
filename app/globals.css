@@ -286,7 +286,7 @@
       transition: opacity .2s ease, visibility .2s ease;
     }
     nav.links a { color: var(--paper); padding: 10px 0; width: 100%; }
-    nav.links a:hover { color: #F2C9A3; }
+    nav.links a:hover { color: var(--gold-soft); }
     nav.links.open { opacity: 1; visibility: visible; }
     .nav .btn { display: none; }
     .burger {
@@ -845,7 +845,7 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: #128C4A;
+    background: #25D366;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -907,7 +907,7 @@
 
     .mobile-cta-bar a:last-child {
       border-right: none;
-      background: var(--gold-deep);
+      background: var(--gold);
       color: var(--paper);
     }
 
