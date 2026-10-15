@@ -1,12 +1,14 @@
 'use client';
 
 import Script from 'next/script';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { getConsent, CONSENT_EVENT } from '@/lib/consent';
 
 // Google Analytics 4.
 // Setup: put your Measurement ID (looks like G-XXXXXXXXXX) in the environment variable
 // NEXT_PUBLIC_GA_ID  (in .env.local on your computer, and in your hosting dashboard for the live site).
 // With no ID set, nothing is loaded and nothing is tracked.
+// Even with an ID, nothing is loaded until the visitor clicks "Accept" on the cookie banner.
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 function track(name, params) {
@@ -26,9 +28,42 @@ function classify(a) {
   return null;
 }
 
+// Remove Google Analytics cookies (used when a visitor declines or withdraws consent)
+function clearGaCookies() {
+  const host = window.location.hostname;
+  document.cookie.split(';').forEach((c) => {
+    const name = c.split('=')[0].trim();
+    if (name === '_ga' || name.startsWith('_ga_') || name === '_gid' || name.startsWith('_gat')) {
+      [host, '.' + host, ''].forEach((d) => {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${d ? '; domain=' + d : ''}`;
+      });
+    }
+  });
+}
+
 export default function Analytics() {
+  const [consent, setConsentState] = useState(null);
+
   useEffect(() => {
-    if (!GA_ID) return;
+    const read = () => setConsentState(getConsent());
+    read();
+    window.addEventListener(CONSENT_EVENT, read);
+    return () => window.removeEventListener(CONSENT_EVENT, read);
+  }, []);
+
+  const allowed = Boolean(GA_ID) && consent === 'accepted';
+
+  useEffect(() => {
+    if (GA_ID && consent === 'declined') {
+      window['ga-disable-' + GA_ID] = true;
+      clearGaCookies();
+    } else if (GA_ID && consent === 'accepted') {
+      window['ga-disable-' + GA_ID] = false;
+    }
+  }, [consent]);
+
+  useEffect(() => {
+    if (!allowed) return;
     function onClick(e) {
       const a = e.target.closest && e.target.closest('a[href]');
       if (!a) return;
@@ -42,9 +77,9 @@ export default function Analytics() {
     }
     document.addEventListener('click', onClick, { capture: true });
     return () => document.removeEventListener('click', onClick, { capture: true });
-  }, []);
+  }, [allowed]);
 
-  if (!GA_ID) return null;
+  if (!allowed) return null;
 
   return (
     <>

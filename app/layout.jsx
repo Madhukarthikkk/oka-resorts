@@ -2,6 +2,7 @@ import '@fontsource-variable/cinzel/index.css';
 import '@fontsource-variable/mulish/index.css';
 import './globals.css';
 import Analytics from '@/components/Analytics';
+import CookieConsent from '@/components/CookieConsent';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://okaresorts.com';
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Analytics />
+        <CookieConsent />
       </body>
     </html>
   );

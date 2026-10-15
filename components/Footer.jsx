@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ObfuscatedEmail from '@/components/ObfuscatedEmail';
+import CookieSettingsButton from '@/components/CookieSettingsButton';
 
 export default function Footer() {
   return (
@@ -17,6 +18,13 @@ export default function Footer() {
               <a className="pill" href="https://instagram.com/amitha_developers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.25 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>Instagram</a>
               <ObfuscatedEmail className="pill" subject="Oka Resorts Enquiry"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>Email</ObfuscatedEmail>
             </div>
+            <p style={{ marginTop: 28, fontSize: 14, letterSpacing: '0.04em', color: 'rgba(244,239,226,0.75)' }}>
+              <Link href="/terms" style={{ color: 'inherit', textDecoration: 'underline' }}>Terms &amp; Conditions</Link>
+              {' \u00b7 '}
+              <Link href="/privacy-and-cookies" style={{ color: 'inherit', textDecoration: 'underline' }}>Privacy Policy</Link>
+              {' \u00b7 '}
+              <CookieSettingsButton />
+            </p>
           </div>
         </div>
       </footer>
