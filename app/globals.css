@@ -75,18 +75,8 @@
     color: var(--gold-deep);
     display: inline-flex;
     align-items: center;
-    gap: 14px;
     margin-bottom: 22px;
     max-width: 100%;
-  }
-
-  .eyebrow::before {
-    content: "";
-    width: 28px;
-    height: 28px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16.00,1.00 20.44,5.28 26.61,5.39 26.72,11.56 31.00,16.00 26.72,20.44 26.61,26.61 20.44,26.72 16.00,31.00 11.56,26.72 5.39,26.61 5.28,20.44 1.00,16.00 5.28,11.56 5.39,5.39 11.56,5.28' fill='none' stroke='%23C9A227' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpolygon points='16.00,10.00 17.47,13.98 21.71,14.15 18.38,16.77 19.53,20.85 16.00,18.50 12.47,20.85 13.62,16.77 10.29,14.15 14.53,13.98' fill='%23C9A227'/%3E%3C/svg%3E") center / contain no-repeat;
-    display: inline-block;
-    flex-shrink: 0;
   }
 
   .on-dark .eyebrow { color: var(--paper); }
@@ -1048,7 +1038,6 @@
 
   @media (max-width: 720px) {
     .eyebrow { letter-spacing: 0.14em; font-size: 16px; gap: 10px; }
-    .eyebrow::before { width: 22px; height: 22px; }
     .hero { padding-top: 36px; }
     .hero-ctas { flex-direction: column; gap: 12px; margin-top: 30px; }
     .hero-ctas .btn { width: 100%; padding: 16px 20px; }

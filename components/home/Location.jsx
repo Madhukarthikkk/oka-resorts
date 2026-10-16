@@ -35,25 +35,26 @@ export default function Location() {
                   <h3>Connectivity &amp; Transit</h3>
                   <ul>
                     <li>National Highway (NH-16) frontage <em>Adjacent</em></li>
-                    <li>Bhogapuram International Airport <em>15 min</em></li>
+                    <li>Bhogapuram International Airport <em>25 min</em></li>
                     <li>Vizianagaram Railway Station <em>20 min</em></li>
+                    <li>Anandapuram <em>20 min</em></li>
                     <li>Proposed metro line, minutes from stations <em>Nearby</em></li>
                   </ul>
                 </div>
                 <div className="loc-cat">
                   <h3>Education</h3>
                   <ul>
-                    <li>Raghu Engineering College <em>10 min</em></li>
+                    <li>Raghu Engineering College <em>15 min</em></li>
                     <li>Oakridge, Ameya &amp; Delhi Public School <em>10 min</em></li>
-                    <li>Lendi &amp; Avanthi institutions <em>10 min</em></li>
-                    <li>IIM Visakhapatnam <em>15 min</em></li>
+                    <li>Lendi &amp; Avanthi institutions <em>15 min</em></li>
+                    <li>IIM Visakhapatnam <em>25 min</em></li>
                   </ul>
                 </div>
                 <div className="loc-cat">
                   <h3>Work &amp; Technology</h3>
                   <ul>
-                    <li>IT SEZ, Gambhiram <em>15 min</em></li>
-                    <li>Google Data Centre <em>10 min</em></li>
+                    <li>IT SEZ, Gambhiram <em>25 min</em></li>
+                    <li>Google Data Centre <em>15 min</em></li>
                     <li>Miracle Software Park <em>20 min</em></li>
                   </ul>
                 </div>
@@ -61,7 +62,7 @@ export default function Location() {
                   <h3>Nature, Faith &amp; Leisure</h3>
                   <ul>
                     <li>Anantha Padmanabha Swamy Temple <em>5 min</em></li>
-                    <li>Bheemili Beach <em>10 min</em></li>
+                    <li>Bheemili Beach <em>25 min</em></li>
                     <li>International Cricket Stadium, Madhurawada <em>25 min</em></li>
                     <li>Simhachalam Temple <em>35 min</em></li>
                   </ul>
